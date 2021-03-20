@@ -1,6 +1,6 @@
 package Units;
 
- class Tank extends InfantryUnit {
+ class Tank extends MechanizedUnit {
 
     public Tank(int hp, int exp, int dmg) {
         super(hp, exp, dmg);

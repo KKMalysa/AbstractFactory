@@ -1,6 +1,6 @@
 package Units;
 
 public enum UnitType {
-    RIFLEMAN, TANK
+    RIFLEMAN, TANK, WARSHIP
 
 }

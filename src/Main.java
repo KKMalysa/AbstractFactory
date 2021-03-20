@@ -1,19 +1,17 @@
-import Units.InfantryFactory;
-import Units.RedInfantryUnitFactory;
-import Units.UnitType;
+import Units.*;
 
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
-        InfantryFactory infantryFactory = new RedInfantryUnitFactory();
-        ArrayList army = new ArrayList();
 
-        for(int i=0; i<10; i++) {
-            army.add(infantryFactory.createUnit(UnitType.TANK));
-        }
+        Factory blueFactory = new BlueFactory();
+        Factory redFactory = new RedFactory();
 
-        System.out.println(army);
+        MechanizedUnit redTank = redFactory.createMechanizedUnit(UnitType.TANK);
+        InfantryUnit blueRifleman = blueFactory.createInfantryUnit(UnitType.RIFLEMAN);
+        NavyUnit redWarschip = redFactory.createNavyUnit(UnitType.WARSHIP);
+
     }
 }
